@@ -92,6 +92,16 @@
       width: 60px;
       font-size: 13px;
     }
+    #in:hover{
+      animation-name: flar;
+      animation-duration: 2s;
+    }
+    @keyframes flar{
+      0%{border:3px red solid};
+      25%{border:2px rgb(62, 241, 38) solid};
+      50%{border:1px rgb(52, 68, 212) solid};
+      110%{border:1px rgb(224, 238, 34) solid};
+    }
   </style>
 </head>
 
@@ -248,7 +258,7 @@
   </nav>
    
   
-  <input class="form-control me-2" type="search" data-toggle="tooltip" data-placement="left" 
+  <input class="form-control me-2" type="search" data-toggle="tooltip" data-placement="bottom" 
   title="press enter to continue" id="in"  placeholder="Search" aria-label="Search">
   
 
@@ -281,7 +291,7 @@
 
   <!-- <div id="fad"> -->
 
-  <div class="container marketing" style="margin-top: 70px;">
+  <div class="container marketing" style="margin-top: 100px;">
 
     <hr class="featurette-divider">
 
