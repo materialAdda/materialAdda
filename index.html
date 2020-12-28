@@ -44,6 +44,7 @@
     #fad {
       animation-name: fading;
       animation-duration: 2s;
+      
     }
 
     @keyframes fading {
@@ -85,7 +86,7 @@
     }
 
     #serbut {
-      position: absolute;
+      position: relative;
       top: 15.7%;
       left: 16%;
       height: 30px;
@@ -408,19 +409,19 @@
       if (event.keyCode === 13) {
         $("#serbut").click();
         var a = document.getElementById('in').value;
-        if (a == 'maths') {
+        if (a.toLowerCase() == 'maths') {
           window.open("maths.html", "_self");
         }
-        else if (a == 'de') {
+        else if (a.toLowerCase() == 'de') {
           window.open("de.html", "_self");
         }
-        else if (a == 'dbms') {
-          window.open("DBMS.html", "_self");
+        else if (a.toLowerCase() == 'dbms') {
+          window.open("DBMS.HTML", "_self");
         }
-        else if (a == 'oop') {
+        else if (a.toLowerCase() == 'oop') {
           window.open("oop.html", "_self");
         }
-        else if (a == 'ds') {
+        else if (a.toLowerCase() == 'ds') {
           window.open("ds.html", "_self");
         }
         else
